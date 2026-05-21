@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+// Gymbull Web Application - High-Performance Mobile Optimized
 import { AnimatePresence, motion } from 'framer-motion';
 
 import Preloader from './components/Preloader';
