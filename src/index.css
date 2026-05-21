@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    background-color: #ff1a1a;
+    color: #ffffff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+    border-radius: 5px;
+    border: 2px solid #050505;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff1a1a;
+  }
+}
+
+@layer utilities {
+  .text-neon-glow {
+    text-shadow: 0 0 10px rgba(255, 26, 26, 0.6), 0 0 20px rgba(255, 26, 26, 0.4);
+  }
+  
+  .text-neon-glow-strong {
+    text-shadow: 0 0 15px rgba(255, 26, 26, 0.8), 0 0 30px rgba(255, 26, 26, 0.5), 0 0 50px rgba(255, 26, 26, 0.3);
+  }
+
+  .glass-panel {
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-panel-heavy {
+    background: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card {
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    background: rgba(25, 25, 25, 0.6);
+    border-color: rgba(255, 26, 26, 0.3);
+    box-shadow: 0 0 25px rgba(255, 26, 26, 0.15);
+  }
+
+  .bg-concrete-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 0),
+                      radial-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 0);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+
+  .scroll-indicator-line {
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, #ff1a1a, transparent);
+    animation: scrollDown 2s infinite ease-in-out;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  50.1% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
