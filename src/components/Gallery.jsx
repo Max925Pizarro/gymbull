@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
-import gallery1 from '../assets/gallery_1.png';
-import gallery2 from '../assets/gallery_2.png';
-import gallery3 from '../assets/gallery_3.png';
+import gallery1 from '../assets/gallery_1.webp';
+import gallery2 from '../assets/gallery_2.webp';
+import gallery3 from '../assets/gallery_3.webp';
 
 // For gallery items without generated images, use styled placeholders
 const GymPlaceholder = ({ label, gradient }) => (

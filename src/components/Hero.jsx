@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, Flame } from 'lucide-react';
-import heroBg from '../assets/hero_bg.png';
+import heroBg from '../assets/hero_bg.webp';
 
 export default function Hero() {
   const handleWhatsAppRedirect = () => {

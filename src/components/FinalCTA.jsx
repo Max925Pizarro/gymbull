@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, Flame } from 'lucide-react';
-import ctaBg from '../assets/cta_bg.png';
+import ctaBg from '../assets/cta_bg.webp';
 
 export default function FinalCTA() {
   const handleWhatsApp = () => {

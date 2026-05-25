@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 
 export default function Preloader({ onComplete }) {
   const [taglineIndex, setTaglineIndex] = useState(0);
